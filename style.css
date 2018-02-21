@@ -1,0 +1,510 @@
+*{
+    transition: .2s;
+}
+
+@font-face {
+    font-family: "Fregat_regular";
+    src: url('./fonts/Fregat_regular.otf')
+}
+
+body{
+    position: relative;
+    overflow-X: hidden;
+}
+
+.closeoutgoingMenu {
+    position: absolute;
+    top: 22px;
+    left: 80%;
+    color: white;
+    font-size: 25px;
+}
+
+.outgoingMenuSocials a {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.outgoingMenuSocials a:hover {
+    color: white;
+}
+
+.outgoingMenu {
+    opacity: 1!important;
+}
+
+.outgoingMenu li:hover {
+    color: white;
+}
+
+.outgoingMenu{
+    width: 200px;
+    padding: 7px 20px 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 200px;
+    background-color: #10294b;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    color: #c0cadd;
+}
+.outgoingMenu a {
+    color: #c0cadd;
+    text-decoration: none;
+}
+
+.outgoingMenu p {
+    color: white;
+    font-weight: bold;
+}
+
+.outgoingMenu li {
+    margin-bottom: 10px;
+}
+
+.contacts{
+    margin-top: 20px;
+
+}
+body,ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fixedPanel {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 -4px 5px 5px gray;
+    z-index: 999;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.socials:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+.socialsinner{
+    float: left;
+    position: relative;
+    left: 65px;
+}
+.cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+    width: 40px;
+    text-align: right;
+    left: 5px;
+    position: relative;
+}
+.cont div {
+    position: relative;
+    z-index: 5;
+}
+
+.open{
+    left: 0;
+    display: inline-block;
+    width: 10px;
+    background-color: white;
+    padding-right:15px ;
+
+}
+
+.close{
+    display: inline-block;
+    width: 30px;
+    left: 15px;
+    height: 20px;
+    background-color: white;
+}
+
+.toggleClass {
+    display: none;
+    background-color: #8496b0;
+}
+
+.fixedPanel img {
+    padding: 0 20px;
+    height: 25px;
+}
+
+.fixedPanel div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 60px;
+    background-color: #13325d;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.floatLeft {
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.floatLeft div:first-child {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.floatLeft img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+.floatLeft p {
+    width: 60px;
+}
+
+.floatLeft a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #8496b0;
+    position: relative;
+}
+.mainMenu:hover {
+    color: white;
+}
+
+.mainMenu:hover::after {
+    position: absolute;
+    display: inline-block;
+    top: 200%;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #2d9efd;
+    content: '';
+
+}
+
+.floatLeft ul {
+    list-style: none;
+}
+.floatLeft > ul {
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+.floatLeft > ul > li{
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+    width: 110px;
+}
+
+.floatLeft > ul li:hover .submenu{
+    display: block;
+}
+
+.floatLeft > ul li:first-child:hover .submenu{
+    left: -20px;
+}
+
+.floatLeft > ul li:nth-child(2):hover .submenu{
+    left: -20px;
+}
+.floatLeft > ul li:nth-child(3):hover .submenu{
+    left: -22px;
+}
+.floatLeft > ul li:nth-child(4):hover .submenu{
+    left: -22px;
+}
+
+.floatLeft > ul li ul {
+    padding: 10px 0;
+    display: none;
+    position: absolute;
+    top: 59px;
+    background-color: white;
+    width: 150px;
+    box-shadow: 0 2px 5px 1px gray;
+    z-index: 999;
+}
+
+.submenu li {
+    margin-top: 5px;
+}
+.submenu li a{
+ text-decoration: none;
+    color: #8496b0;
+}
+.submenu li a:hover{
+    color: #dce9fd;
+}
+
+.floatRigth {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 5%;
+    justify-content: center;
+}
+
+.floatRigth div {
+    width: 15px;
+    height: 3px;
+    margin: 2px 0;
+    background-color: white;
+}
+
+.main {
+    padding: 0 50px;
+}
+.main h5 {
+    color: #6f6f6f;
+    font-size: 16px;
+}
+
+.navigation span {
+    padding-right: 10px;
+}
+.navigation span a {
+    color: #888;
+    font-size: 0.8em;
+}
+
+h1 {
+    font-family: Fregat_regular;
+}
+
+.fa {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 2px;
+}
+
+.fa-facebook {
+    color: #3460EE;
+}
+.fa-twitter {
+    color: #55ACEE;
+}
+.fa-reddit {
+    color: #ff5700;
+}
+.fa-linkedin{
+    color: #8496b0;
+}
+.fa-google {
+    color: red;
+}
+.fa-stumbleupon {
+    color: salmon;
+}
+
+.contribytedBy {
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-right: none;
+}
+.contribytedBy div:first-child{
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+.contribytedBy div:first-child img {
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+.contribytedBy div:first-child img + span a {
+    text-decoration: none;
+    color: #018cff;
+}
+.contribytedBy div:first-child img + span a:hover {
+    color: #3460EE;
+}
+
+.content {
+    width: 100%;
+}
+.content::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.mainContent {
+    float: left;
+    width: 70%;
+}
+
+.sidebar {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 140%;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #018cff;
+}
+
+.sidebar p:last-child {
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.sliderContainer {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.sliderContainer__slides {
+    position: relative;
+    height: 100%;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+}
+.sliderContainer__slides li {
+      list-style: none;
+      position: relative;
+      background-color: grey;
+      display: table;
+      float: left;
+      height: 100%;
+      width: 100%;
+  }
+.sliderContainer__slides li img {
+      display: table-cell;
+      width: 100%;
+      height: 480px;
+  }
+
+
+.sliderContainer__buttons_prev {
+     position: absolute;
+     height: 100%;
+     cursor: pointer;
+     line-height: 550px;
+     top: 0;
+     left: 0;
+
+ }
+.sliderContainer__buttons_next {
+    position: absolute;
+    height: 100%;
+    cursor: pointer;
+    line-height: 550px;
+    top: 0;
+    right: 0;
+}
+
+.description {
+    color: #666;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.text {
+    color: #3a3a3a;
+    line-height: 140%;
+}
+
+.text a {
+    text-decoration: none;
+    color: #018cff;
+}
+
+.text p:last-child {
+    font-style: italic;
+}
+
+
+@media only screen and
+(max-width: 1000px){
+    .floatLeft > ul,.sidebar,
+    .contribytedBy div:first-child img,
+    .contribytedBy .socials{
+        display: none;
+    }
+    .contribytedBy {
+        border: none;
+    }
+
+    .mainContent {
+        width: 100%;
+    }
+}
+
+@media only screen and
+(max-width: 840px){
+    .prependtext {
+        display: none!important;
+    }
+    .fixedPanel{
+        justify-content: center;
+    }
+    .open {
+        padding-right: 50px;
+    }
+    .close {
+        padding-left: 25px;
+    }
+}
+
+
+@media only screen and
+(max-width: 510px){
+    .contribytedBy div:first-child{
+        display: inline-block;
+    }
+    .main {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and
+(max-width: 510px){
+    .close {
+        padding-left: 15px;
+    }
+}
