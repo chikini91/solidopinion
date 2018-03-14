@@ -43,7 +43,7 @@ select {
     width: calc(100% - 350px );
     margin-left: 15px;
     padding-top: 30px;
-    background-color: sandybrown;
+
 }
 
 input[type="checkbox"]:checked + label::after {

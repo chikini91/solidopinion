@@ -124,24 +124,29 @@
                     </ul>
                     {{/options}}
                     <p style="font-weight:bold;line-height:150%">{{description}}</p>
-                    <ul style="list-style:none">
-                        <li style="display:inline-block"><span style="color:#959595">Category:</span>{{category}} </li>
-                        <li style="display:inline-block">|</li>
-                        <li style="display:inline-block"><span style="color:#959595">Skils</span></li>
-
-                        {{#skils}}
-                         <p style="display:inline-block;border-radius: 3px;background-color:  #f6f6f5;height: 30px">{{name}}</p>
-                        {{/skils}}
-
-                    </ul>
+                    <div style="padding:25px">
+                        <ul style="list-style:none;padding-bottom:10px">
+                            <li style="display:inline-block"><span style="color:#959595">Category:</span>{{category}} </li>
+                            <li style="display:inline-block">|</li>
+                            <li style="display:inline-block"><span style="color:#959595">Skils</span></li>
+                            {{#skils}}
+                             <p style="display:inline-block;border-radius: 3px;background-color:#f6f6f5;padding:5px">{{name}}</p>
+                            {{/skils}}
+                            <a href="#" style="color:#42b0f0;text-decoration:none">18 more</a>
+                        </ul>
+                        <span style="color:#959595">Client:</span>
+                            {{#client}}
+                                {{country}}
+                                <span style="font-weight:bold">{{rating}}</span>
+                                <img src="./img/star.png">
+                                <img src="./img/stars.png" style="margin-left:-15px">
+                            {{/client}}
+                        </div>
                     </div>
-
                     {{/posts}}
-
             </script>
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
-
 </body>
 </html>
