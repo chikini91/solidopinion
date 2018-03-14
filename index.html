@@ -99,29 +99,46 @@
         <div class="main">
 
 
-            <div id="root">Loading...</div>
+            <div id="root"></div>
 
             <script id="template" type="x-tmpl-mustache">
 
-                {{#posts}}
-                     * {{name}}
-                     * {{options}}
-                {{/posts}}
+
+                    {{#posts}}
+                    <div class="inner" style="border: 1px solid gray;border-radius: 3px;margin-bottom:20px;padding:20px">
+
+                    <h2 style="color:#42b0f0">{{name}}</h2>
+                    <ul style="list-style:none">
+                        {{#options}}
+                        <li style="display:inline-block"><span style="color:#959595">Fixed:    </span>{{fixed}}</li>
+                        <li style="display:inline-block;margin:0 5px">|</li>
+                        <li style="display:inline-block"><span style="color:#959595">Budget:   </span>{{budget}}</li>
+                        <li style="display:inline-block;margin:0 5px">|</li>
+                        <li style="display:inline-block"><span style="color:#959595">Delivery: </span>{{delivery}}</li>
+                        <li style="display:inline-block;margin:0 5px">|</li>
+                        <li style="display:inline-block"><span style="color:#959595">Posted:   </span>{{posted}}</li>
+                        <li style="display:inline-block;margin:0 5px">|</li>
+                        <li style="display:inline-block"><span style="color:#959595">Ends: </span>{{ends}}</li>
+                        <li style="display:inline-block;margin:0 5px">|</li>
+                        <li style="display:inline-block;color:#42b0f0"><span>{{proposals}}:    </span> Proposals </li>
+                    </ul>
+                    {{/options}}
+                    <p style="font-weight:bold;line-height:150%">{{description}}</p>
+                    <ul style="list-style:none">
+                        <li style="display:inline-block"><span style="color:#959595">Category:</span>{{category}} </li>
+                        <li style="display:inline-block">|</li>
+                        <li style="display:inline-block"><span style="color:#959595">Skils</span></li>
+
+                        {{#skils}}
+                         <p style="display:inline-block;border-radius: 3px;background-color:  #f6f6f5;height: 30px">{{name}}</p>
+                        {{/skils}}
+
+                    </ul>
+                    </div>
+
+                    {{/posts}}
 
             </script>
-
-             </div>
-
-                <div class="innerBlock">
-
-
-
-                </div>
-                <div class="innerBlock">
-                    <h2></h2>
-                </div>
-
-
         </div>
     </div>
     <script type="text/javascript" src="script.js"></script>

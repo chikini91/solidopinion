@@ -1,4 +1,3 @@
-/home/oleg/Documents/tests/solidopinion/node_modules/chosen-js/chosen-sprite.png
 body, ul, p {
     margin: 0;
     padding: 0;
@@ -28,8 +27,14 @@ body {
 .main {
     float: left;
     width: 65%;
-    /*height: 500px;*/
     margin-left: 15px;
     padding-top: 30px;
-    background-color: sandybrown;
+}
+
+
+
+#template .inner ul li{
+    list-style: none;
+    padding-left: 50px;
+
 }
